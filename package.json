@@ -1,0 +1,25 @@
+{
+    "name": "dxl-helper",
+    "displayName": "DXLHelper",
+    "description": "DXL Language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dxl",
+            "aliases": ["DXL", "dxl"],
+            "extensions": [".inc",".dxl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dxl",
+            "scopeName": "source.dxl",
+            "path": "./syntaxes/c.tmLanguage"
+        }]
+    }
+}
